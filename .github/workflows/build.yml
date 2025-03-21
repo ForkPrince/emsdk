@@ -19,11 +19,11 @@ jobs:
       - name: Install
         run: ./emsdk install latest
 
-      - name: Activate
-        run: ./emsdk activate latest
+      # - name: Activate
+      #   run: ./emsdk activate latest
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: compiled
-          path: ./
+          path: ./upstream/emscripten
